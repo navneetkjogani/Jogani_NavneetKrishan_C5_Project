@@ -3,7 +3,7 @@
     width: 300px;
 }
 
-.social-media img{
-    height: 20px;
-    width: 22px;
+.no-link {
+    pointer-events: none;
+    cursor: default;
 }
