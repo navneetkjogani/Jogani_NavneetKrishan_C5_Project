@@ -3,12 +3,25 @@
     height: 380px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search input {
+    border: solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;    
 }
 
 .city-img {
     margin-left: 15%;
     margin-right: 15%;    
+
 }
 
 .city-img img{
@@ -16,6 +29,12 @@
     width: 150px;
     padding: 4%;
     border-radius: 25%;
+}
+
+.view-more {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
 }
 
 .no-link {

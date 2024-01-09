@@ -6,12 +6,18 @@ body {
   padding: 0;
   border: 0;
   overflow: hidden; 
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Remove default scrollbars */
 body {
   overflow-y: auto;
   background-color: #e0e0e0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 #container {
@@ -22,16 +28,55 @@ body {
   border: 0;
 }
 
+header, footer {
+  background-color: rosybrown;
+  display: flex;
+  align-items: center;
+  position:sticky;
+  width: 100%;
+  z-index: 1000;
+}
+
+
 header img {
   height: 60px;
   width: 60px;
 }
 
-header, footer {
-  background-color: rosybrown;
+.loginLink {
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  justify-content: space-between;
+  padding: 20px 0 5px;
+  align-items: center;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+
+.contact, .social-media {
+  display: flex;
+  align-items: center;
+
 }
 
 .social-media img {
   height: 20px;
   width: 22px;
+  margin-right: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 100%;
+  margin-bottom: 0;
 }

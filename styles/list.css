@@ -1,10 +1,28 @@
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  display: inline-flex;
+  font-weight: bold;
+  padding: 5px 25px;
+  margin: 5px 25px;
+
+}
+
 .hotel {
   margin: 2%;
   background-color: rgb(132,136,139);
   width: 40%;
+  display:inline-flex;
 }
 
 #list-view img {
   height: 200px;
   width: 250px;
+}
+
+#map-view {
+  display: none;
 }

@@ -12,6 +12,10 @@
     width: 500px;
 }
 
+.payment-details {
+    margin-bottom: 25px;
+}
+
 .customer-details {
     margin: 2%;
 }
