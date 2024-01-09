@@ -41,11 +41,12 @@ header, footer {
 header img {
   height: 60px;
   width: 60px;
+  margin-left: 1%;
 }
 
 .loginLink {
   margin-left: auto;
-  padding-right: 15px;
+  padding-right: 2%;
 }
 
 header {
@@ -53,30 +54,32 @@ header {
 }
 
 footer {
-  justify-content: space-between;
-  padding: 20px 0 5px;
+  padding: 20px 0;
   align-items: center;
+  justify-content: space-between;
+  top:0;
   bottom: 0;
-  flex-wrap: wrap;
 }
 
-.contact, .social-media {
-  display: flex;
-  align-items: center;
+.contact {
+  margin-left: 1%;
+ }
+ 
+.copyright {
+  font-size: 10px;
+}
 
+.social-media {
+  margin-right: 2%;
 }
 
 .social-media img {
   height: 20px;
   width: 22px;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
-  width: 100%;
-  margin-bottom: 0;
+input:focus{
+  outline: none;
 }
+

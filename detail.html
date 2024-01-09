@@ -17,29 +17,71 @@
     <div id="container">
         <header></header>
         <div id="content">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-            <br>
+            <div class="bookContainer">    
+                <div class="imageContainer">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" class="hotel-image">
+        </div>
+        <div class="formContainer">
             <form id="bookNow" method="GET" action="./payment.html">
-                <label for="adults">Adults:</label>
-                <input type="number" id="adults" name="adults" min="1" value="1" required><br>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="fdate">From Date:</label>
-                <input type="date" id="fdate" name="fdate" required><br>
-                <label for="tdate">To Date:</label>
-                <input type="date" id="tdate" name="tdate" required><br>
-                <label for="price">Total:</label>
-                <input type="text" id="price" name="price" readonly><br>
-                <input type="submit" value="Book Now">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="adults">Adults:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="adults" name="adults" min="1" value="1" required><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fdate">From Date:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="fdate" name="fdate" required><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tdate">To Date:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="tdate" name="tdate" required><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="price">Total:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="price" name="price" readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Book Now">
+                        </td>
+                    </tr>                
+            </table>
             </form>
+        </div>
+        </div>
+        <div class="hotel-detail">
             <h2>Radisson Blu Hotel</h2>
             <p>
-                RATING
-                <br>
+                <h5>RATING</h5>
                 5 Star
             </p>
             <p>
-                AMENITIES
+                <h5>AMENITIES</h5>
                 <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
@@ -52,6 +94,7 @@
                 <h5>DESCRIPTION</h5>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius sit deleniti veniam a blanditiis quidem tempora aspernatur, debitis, ipsam iste, nemo atque officiis quaerat! Voluptas quidem impedit possimus id!
             </p>
+        </div>
         </div>
         <footer></footer>
     </div>
