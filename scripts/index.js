@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         link.classList.add('no-link');
     }
 
+    $("#loginModalBody").load("login.html");
+    $("#contactModalBody").load("contact.html");
+
 });
 
 

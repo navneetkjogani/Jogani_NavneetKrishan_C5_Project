@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
+
 </head>
 <body>
     <div id="container">
         <header>
             <a id="indexLink" href = "./index.html">
             <img alt="logo" src="./assests/images/logo.png">
-            </a>
-            <a href="./login.html" class="loginLink">Login</a>
+            </a>            
+            <a class="loginLink btn btn-light" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="loginModalBody">
+                            <!-- Content from login.html will be loaded here using js -->
+                        </div>
+                        <div class="modal-footer">
+                            <!-- Content from login.html will be loaded here using js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <div id="content">
             <div class="search-bar">
@@ -46,13 +68,32 @@
                     <div class="overlay-text">Kolkata</div>
                 </div>
             </div>
-                <a href="#" class="view-more">View more >></a>
+                <a href="#" class="view-more btn btn-secondary">View More</a>
             </div>
         </div>
 
         <footer>
             <div class="contact">
-                <a href="./contact.html">Contact Us</a>
+                <a class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="contactModalLabel">Get in touch</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="contactModalBody">
+                                <!-- Content from login.html will be loaded here using js -->
+                            </div>
+                            <div class="modal-footer">
+                                <!-- Content from login.html will be loaded here using js -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="copyright">
                 &copy; 2020 ROOM SEARCH PVT. LTD.

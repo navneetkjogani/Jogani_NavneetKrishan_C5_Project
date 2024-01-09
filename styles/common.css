@@ -46,7 +46,39 @@ header img {
 
 .loginLink {
   margin-left: auto;
-  padding-right: 2%;
+  margin-right: 2%;
+  /* padding-right: 2%; */
+}
+
+.modal {
+  z-index: 1050;
+}
+
+.modal-backdrop {
+  display: none !important;
+}
+
+#loginModalBody {
+  text-align: center;
+}
+
+#loginModalBody label {
+  display: inline;
+  margin:10px 20px;
+}
+
+#loginModalBody input {
+  margin:10px 20px;
+  /* width: 100%; */
+}
+
+#contactModalBody label {
+  display: inline;
+  margin: 10px 20px;
+}
+
+#contactModalBody input {
+  margin: 10px 20px;
 }
 
 header {

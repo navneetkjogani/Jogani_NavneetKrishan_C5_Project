@@ -17,4 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('header').innerHTML = localStorage.getItem('headerData');
     document.querySelector('footer').innerHTML = localStorage.getItem('footerData');
 
+    $("#loginModalBody").load("login.html");
+    $("#contactModalBody").load("contact.html");
+    // $("#contactModalBody").load("contact.html", function() {
+    //     $("#contactModalBody #submitContactForm").appendTo("#contactModal .modal-footer");
+
+    // });
+
 });
