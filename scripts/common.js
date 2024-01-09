@@ -12,3 +12,9 @@
 //         window.location.href = './index.html?email=' + email;
 //     } 
 // }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('header').innerHTML = localStorage.getItem('headerData');
+    document.querySelector('footer').innerHTML = localStorage.getItem('footerData');
+
+});
