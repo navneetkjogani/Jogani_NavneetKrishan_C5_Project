@@ -5,12 +5,13 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 /* Remove default scrollbars */
 body {
   overflow-y: auto;
+  background-color: #e0e0e0;
 }
 
 #container {
@@ -24,6 +25,10 @@ body {
 header img {
   height: 60px;
   width: 60px;
+}
+
+header, footer {
+  background-color: rosybrown;
 }
 
 .social-media img {
