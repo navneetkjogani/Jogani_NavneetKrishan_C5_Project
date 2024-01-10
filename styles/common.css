@@ -52,7 +52,14 @@ header img {
 }
 
 .modal {
+  /* display: flex;
+  align-items: center; */
   z-index: 1050;
+  height:max-content;
+}
+
+.modal-dialog {
+  margin: auto;
 }
 
 .modal-backdrop {

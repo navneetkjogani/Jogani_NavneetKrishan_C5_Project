@@ -30,7 +30,7 @@
     justify-content:space-evenly;
     flex-wrap: wrap; 
     margin: 20px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .img-container {
@@ -54,6 +54,8 @@
 
 .overlay-text {
     position: absolute;
+    height: 150px;
+    width: 150px;
     top: 0;
     left: 0;
     right: 0;
@@ -96,7 +98,7 @@
     }
 
     .img-container {
-        width: calc(33.33% - 20px);
+        width: 33.33%;
     }
 }
 
