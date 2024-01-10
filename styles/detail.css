@@ -14,12 +14,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    position: relative; 
     
 }
 
 #content img.hotel-image {
     height: 350px;
     width: 400px;    
+}
+
+.carousel-inner img {
+    height: 350px;
+    width: 400px;   
+}
+
+#content .imageContainer .carousel-control-prev-icon,
+#content .imageContainer .carousel-control-next-icon {
+    color: rosybrown;
+    font-size: 55px;
 }
 
 #content .formContainer {
@@ -59,9 +72,17 @@
     display: inline;
 }
 
+.hotel-detail h2 {
+    margin-top: 20px;
+}
+
 .hotel-detail h5 {
     font-family: cursive;
 }
+
+.golden-star {
+    color: #EEBD01;
+  }
 
  /* #bookNow label {
     width: 40%;

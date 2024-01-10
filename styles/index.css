@@ -74,10 +74,15 @@
     opacity: 1;
    }
 
+   .view-more-div {
+    display: flex;
+    justify-content: center;
+   }
+
 .view-more {
     margin: 25px;
     width: fit-content;
-    
+    text-align: center;    
 }
 
 .no-link {

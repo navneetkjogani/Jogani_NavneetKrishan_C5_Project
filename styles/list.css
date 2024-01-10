@@ -44,6 +44,10 @@ li{
   color: black;
 }
 
+.golden-star {
+  color: #EEBD01;
+}
+
 #map-view {
   display: none;
 }
