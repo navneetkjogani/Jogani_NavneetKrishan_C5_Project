@@ -40,16 +40,16 @@
     box-sizing: border-box;
     border: 1px solid black;
     border-left: 0;
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #bookNow {
-    height: 350px;
+    height: 100%;
     width: 100%;
     padding: 15px;
-    display: block;
+    box-sizing: border-box;
    
     /* display: inline-flex;
     justify-content: space-between; */
@@ -61,15 +61,16 @@
 }
 
 #bookNow input {
-    margin: 15px 60px;
-    width: 60%;
+    margin: 15px 0;
+    width: calc(100% - 20px);
 }
 
 #bookNow input[type="submit"] {
-    margin: 0 50px;
+    /* margin: 0 50px; */
     padding: 10px;
     width: fit-content;
     display: inline;
+    box-sizing: border-box;
 }
 
 .hotel-detail h2 {
@@ -98,3 +99,31 @@
     justify-content: right;
 } */
 
+@media (max-width: 768px) {
+    #content .bookContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #content .imageContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    #content img.hotel-image,
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    #content .formContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #content .imageContainer .carousel-control-prev-icon,
+    #content .imageContainer .carousel-control-next-icon {
+        font-size: 35px;
+    }
+}

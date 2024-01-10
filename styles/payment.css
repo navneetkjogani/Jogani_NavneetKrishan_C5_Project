@@ -44,3 +44,35 @@
     margin: 2%;
     padding: 1% 2%;
 } */
+
+@media (max-width: 768px) {
+    .hotel {
+        width: 80%;
+    }
+
+    .hotel img {
+        height: 150px;
+        width: 200px;
+        padding-right: 10px;
+    }
+
+    .payment-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hotel {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .hotel img {
+        height: 120px;
+        width: 160px;
+        padding-right: 10px;
+    }
+}
